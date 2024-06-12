@@ -1,6 +1,19 @@
 Börja med att köra npm init -y, nedb-promises, joi, nodemon, express, uuid
 
 
+Här följer enbart information som behövs för individuella, därefter ligger allmän information som behövdes i gruppuppgiften.
+
+För att logga in som admin
+http://localhost:8080/admin/login - använd Content-Type application/json i headers. Därefter POST och här är inloggningen som är hårdkodad just nu { "username": "admin", "password": "admin" }
+När du är inloggad som admin så får man tillgång till att lägga till, ta bort och ändra i airbean.db. All denna kod står i order.js och nås genom http://localhost:8080/menu
+Du får även tillgång till att lägga till och ta bort kampanjerbjudanden. Den koden ser du i campaign.js och nås genom http://localhost:8080/campaigns
+För att bara se nuvarande kampanjer så kan man göra en GET-request på http://localhost:8080/campaigns och det behöver man inte vara inloggad admin för att se.
+
+All kod som kräver admin behörighet kontrolleras i en middleware som heter authAdmin.js
+
+
+
+När du väl är inloggad så kan du 
 
 
 
@@ -11,7 +24,21 @@ Börja med att köra npm init -y, nedb-promises, joi, nodemon, express, uuid
 
 
 
-Vi har alla i gruppen bidragit med kod men pga strul med tider så är det bara Alexander och Baran som pushat upp till main. Vi har skickat vår kod över discord och lagt in det separat för att få det att fungera på ett relativt vettigt sätt. 
+
+
+
+
+
+
+
+
+
+
+
+Här är gruppuppgiftens information
+Här är gruppuppgiftens information
+Här är gruppuppgiftens information
+Här är gruppuppgiftens information
 
 
 Menyn:
